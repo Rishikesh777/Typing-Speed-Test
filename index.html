@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftType - Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-keyboard"></i> SwiftType</h1>
+            <p class="tagline">Test your typing speed in 60 seconds</p>
+        </header>
+        
+        <main>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="stat-value" id="wpm">0</div>
+                    <div class="stat-label">WPM</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="accuracy">100%</div>
+                    <div class="stat-label">Accuracy</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="timer">60</div>
+                    <div class="stat-label">Seconds</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="errors">0</div>
+                    <div class="stat-label">Errors</div>
+                </div>
+            </div>
+            
+            <div class="test-area">
+                <div class="instructions">
+                    <p><i class="fas fa-info-circle"></i> Type the text below. The timer starts when you begin typing.</p>
+                </div>
+                
+                <div class="text-display" id="text-display">
+                    <!-- Text to type will be dynamically inserted here -->
+                </div>
+                
+                <div class="input-area">
+                    <textarea id="text-input" placeholder="Click here or start typing to begin the test..." rows="3"></textarea>
+                    <div class="button-container">
+                        <button id="restart-btn" class="btn"><i class="fas fa-redo"></i> Restart Test</button>
+                        <button id="new-text-btn" class="btn"><i class="fas fa-sync-alt"></i> New Text</button>
+                    </div>
+                </div>
+                
+                <div class="results hidden" id="results">
+                    <h2><i class="fas fa-trophy"></i> Test Complete!</h2>
+                    <div class="final-stats">
+                        <div class="final-stat">
+                            <span class="final-value" id="final-wpm">0</span>
+                            <span class="final-label">WPM</span>
+                        </div>
+                        <div class="final-stat">
+                            <span class="final-value" id="final-accuracy">100%</span>
+                            <span class="final-label">Accuracy</span>
+                        </div>
+                        <div class="final-stat">
+                            <span class="final-value" id="final-errors">0</span>
+                            <span class="final-label">Errors</span>
+                        </div>
+                    </div>
+                    <button id="try-again-btn" class="btn btn-large"><i class="fas fa-play-circle"></i> Try Again</button>
+                </div>
+            </div>
+            
+            <div class="difficulty">
+                <h3><i class="fas fa-sliders-h"></i> Difficulty Level</h3>
+                <div class="difficulty-buttons">
+                    <button class="difficulty-btn active" data-level="easy">Easy</button>
+                    <button class="difficulty-btn" data-level="medium">Medium</button>
+                    <button class="difficulty-btn" data-level="hard">Hard</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Made with <i class="fas fa-heart"></i> using HTML, CSS, and JavaScript</p>
+            <p class="footer-note">Three-file typing test challenge</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
