@@ -68,14 +68,3 @@ Typing-Speed-Test
 - Sound effects
 - Progress analytics
 
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to fork the repository, open issues, or submit pull requests.
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
----
-
-⭐ If you found this project useful, consider giving it a star!
