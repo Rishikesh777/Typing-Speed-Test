@@ -24,10 +24,6 @@ A modern and responsive typing speed test application built with **HTML, CSS, an
 - CSS3
 - JavaScript (Vanilla)
 
-## 📷 Preview
-
-> Add screenshots of the application here.
-
 ## 🚀 Getting Started
 
 ### Clone the repository
